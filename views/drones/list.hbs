@@ -1,0 +1,9 @@
+<h2>Available drones</h2>
+
+<ul>
+  {{#each drones as |drone|}}
+  <a href="/drones/{{drone.id}}"><li>{{drone.name}}</li></a>
+  {{/each}}
+</ul>
+
+<a href="/drones/create"><button>New</button></a>
